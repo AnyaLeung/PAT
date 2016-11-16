@@ -7,9 +7,18 @@ int main(void){
     int m;//每位上的數 
     int a[10] = {0};
     int n;
+    int k = 0;//位數
 
     scanf("%d", &N);
 
+    while(N > 0){
+        N /= 10;
+        k++; 
+    }
+
+    do{
+         
+    }
     while(N > 0){
         m = N % 10;
         switch (m){
