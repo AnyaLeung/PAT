@@ -7,7 +7,6 @@ int main(void){
     int a[1000] = {0};
     int each;
 
-
     scanf("%c", &input);
     while(input!='\n') {
         sum += (int)(input - 48);
