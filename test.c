@@ -1,21 +1,18 @@
-//here i come -> come i here
-
 #include <stdio.h>
 
 int main(void){
-    char input[80][80] = {0};
-    int row = 0;
-    int col = 0;
+    int input = 0;
+    scanf("%d", &input);
+    int num = 0;
+    int no[100][1000];
+    int flag = 0;
 
-    scanf("%c", &input[row][col]);
-    while(input[row][col] != '\n'){
-        if(input[row][col] == ' ' ){
-            row =0;
-            col++;
-        }
-        row++;
+    for(int i = 0; i < input; i++){
+        scanf("%d", &num);
+        flag = 0;
+        no[i][0] = num;
+        printf("%d", no[i][0]);
     }
 
-    printf("row:%d, col:%d", row, col);
     return 0;
 }

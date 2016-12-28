@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void){
+    int input[100] = {0};
+    int total_no = 0; 
+    int move = 0;
+
+    scanf("%d %d", &total_no, &move);
+
+    for(int i = 0; i < total_no; i++){
+        scanf("%d", &input[i]);
+    }
+
+    for(int j = move; j < move + total_no; j++){
+        if(j < total_no){
+            printf("%d ", input[j]);
+        }
+
+        else{
+            printf("%d ", input[j % total_no]);
+        }
+    }
+
+    printf("\b");
+    return 0;
+}
