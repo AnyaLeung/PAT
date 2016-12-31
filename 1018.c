@@ -19,6 +19,7 @@ int main(void){
     scanf("%d", &times);
 
     for(int i=0; i<times; i++){
+
         scanf("%c", &j_temp);
         while(j_temp=='\n' ||j_temp==' ') scanf("%c", &j_temp);
         //scanf until nicht null
