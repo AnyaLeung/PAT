@@ -1,11 +1,11 @@
-nclude <stdio.h>
+#include <stdio.h>
 
 int main(void){
     int total = 0;
     int all[1001] = {0};
     int input = 0;
     int ein[1000] = {0};
-    int ein_count = 0;
+    int ein_count = 0; 
     int sum = 0;
     int zwei_count = 0;
     int drei_amount = 0;
@@ -29,12 +29,12 @@ int main(void){
         switch (all[j] % 5){
             case 0: {
                         if(all[j] % 2)    A[0] += all[j];         break;
-                    }
+                    } 
             case 1: ein[ein_count++] = all[j];           break;//nicht
             case 2: A[1]++;                                break;
             case 3: {
-                        drei_amount += all[j];
-                        drei_count++;
+                        drei_amount += all[j]; 
+                        drei_count++;   
                     }
                     break;//nicht
             case 4: max = max > all[j] ? max : all[j];   break;
