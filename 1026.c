@@ -3,7 +3,7 @@
 int main(void){
     int no1 = 0;
     int no2 = 0;
-    double time = 0;
+    int time = 0;
     int hour=0, min=0, sec=0;
     int temp1=0, temp2=0;
 
