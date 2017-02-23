@@ -8,7 +8,7 @@ int main(void){
     int temp1=0, temp2=0;
 
     scanf("%d %d", &no1, &no2);
-    time = (no2-no1+50)/100;
+    time = (no2-no1+50)/100; //四舍五入
 
     temp1 = time;
     temp2 = time;
