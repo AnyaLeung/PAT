@@ -32,8 +32,6 @@ int main(void){
             min_index = 10;
             larger = 0;
             smaller = 10;
-            max = 0;
-            min = 0;
         } 
 
         for(int j=0; j<4; j++){
@@ -57,19 +55,21 @@ int main(void){
         for(int m=0; m<4; m++){
             max += ordnen[m] * pow(10,m);
         } //the largest can be combined
-        printf("%04d -", max);
+       // printf("%04d -", max);
 
         for(int n=3; n>-1; n--){
             min += ordnen[n] * pow(10,(3-n));
         } //smallest
 
-        printf(" %04d", min);
+        //printf(" %04d", min);
 
         result = max - min;
-        printf(" = %d\n", result);
+
+        printf("%d\n", result);
+       // printf(" = %d\n", result);
 
         time++;
-        if(result==0) goto end;
+        if(time==2) goto end;
     }
 end:
     return 0;
