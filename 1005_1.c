@@ -11,7 +11,7 @@ int main(void){
     for(int i = 0; i < input; i++){
         scanf("%d", &num);
         no[count] = num;
-/*
+
         while(num != 1){
             if(num % 2 == 0){
                 num = num / 2; 
@@ -26,7 +26,7 @@ int main(void){
         while(no[count]){
             printf("%d", no[count]);
         }
-*/
+
     }
     while(no[count]){
     printf("%d", no[count]);

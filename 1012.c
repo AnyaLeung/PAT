@@ -17,18 +17,17 @@ int main(void){
 
     scanf("%d", &total);
 
-    for(int i = 0; i < total; i++){
-        while(input != ' '){
+    for(int i=0; i<total; i++){
+        while(input!= ' '){
             scanf("%d ", &input);
             all[i] = input;
         }
     }
     //store input
 
-    for(int j =  0; j < total; j++){
-        switch (all[j] % 5){
-            case 0: {
-                        if(all[j] % 2)    A[0] += all[j];         break;
+    for(int j= 0; j<total; j++){
+        switch (all[j]%5){
+                        if(all[j]%2)    A[0] += all[j];         break;
                     } 
             case 1: ein[ein_count++] = all[j];           break;//nicht
             case 2: A[1]++;                                break;

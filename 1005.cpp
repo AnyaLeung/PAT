@@ -17,7 +17,7 @@ int main(void){
         scanf("%d", &num);
         no[i][0] = num;
 
-   /*     while(i > 0){
+        while(i > 0){
             for(int n = 0; n <= i - 1 && flag == 0; n++){
                 for(int s = 0; no[n][s] && flag == 0; s++){
                     if(no[i][0] == no[n][s])    flag = 1;
@@ -25,17 +25,17 @@ int main(void){
             }   
         }//compare sf with before, if have, assign flag, skip 0 nicht compare
 
-        */
-        /*
-          if(flag == 1) continue; //?
 
-          while(no[i][m] != 1 && flag == 0){
-          if(no[i][m] % 2 == 1)   no[i][m] = (no[i][m-1] * 3 + 1) / 2;
-          else                    no[i][m] = no[i][m-1] / 2;
-          m++;
-          }//process and store every value
-          */
-        // printf("%d", input);
+
+        if(flag == 1) continue; //?
+
+        while(no[i][m] != 1 && flag == 0){
+            if(no[i][m] % 2 == 1)   no[i][m] = (no[i][m-1] * 3 + 1) / 2;
+            else                    no[i][m] = no[i][m-1] / 2;
+            m++;
+        }//process and store every value
+
+        printf("%d", input);
 
         printf("%d", no[i][0]);
 
