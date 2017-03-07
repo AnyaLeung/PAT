@@ -67,7 +67,7 @@ int main(void){
        printf(" %04d", min);
 
        result = max - min;
-       printf("result:%d", max-min);
+//       printf("result:%d", max-min);
 
        // printf("%d\n", result);
         printf(" = %d\n", result);
