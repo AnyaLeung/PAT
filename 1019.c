@@ -14,10 +14,10 @@ int main(void){
     int time = 0;
 
     if(time==0){
-    for(int i=0; i<4; i++){
-        scanf("%c", &chars[i]);  
-        ints[i] = ((int)(chars[i])-48);
-    }//save every digit of the num into the array
+        for(int i=0; i<4; i++){
+            scanf("%c", &chars[i]);  
+            ints[i] = ((int)(chars[i])-48);
+        }//save every digit of the num into the array
     }
 
     while(result!=6174){
@@ -58,19 +58,19 @@ int main(void){
         for(int m=0; m<4; m++){
             max += ordnen[m] * pow(10,m);
         } //the largest can be combined
-        printf("%04d -", max);
+        //printf("%04d -", max);
 
         for(int n=3; n>-1; n--){
             min += ordnen[n] * pow(10,(3-n));
         } //smallest
 
-       printf(" %04d", min);
+        //printf(" %04d", min);
 
-       result = max - min;
-//       printf("result:%d", max-min);
+        result = max - min;
+        printf("%d \n", max-min);
 
-       // printf("%d\n", result);
-        printf(" = %d\n", result);
+        // printf("%d\n", result);
+        // printf(" = %d\n", result);
 
         time++;
     }
