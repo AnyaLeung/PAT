@@ -4,7 +4,7 @@
 
 int main(void){
     int input;
-    int a[2] = {0};
+    int a[3] = {0};
     int i = 0;
 
     scanf("%d", &input);
